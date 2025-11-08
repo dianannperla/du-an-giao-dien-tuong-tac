@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/, 
+        test: /.jsx?$/, 
         exclude: /node_modules/, 
         use: { loader: 'babel-loader' }
       }
@@ -18,7 +18,8 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
+    port: 9000,
+    hot: true
   },
   resolve: {
     extensions: ['.js', '.jsx']
