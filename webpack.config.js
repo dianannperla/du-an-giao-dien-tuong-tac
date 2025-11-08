@@ -20,7 +20,10 @@ module.exports = {
     compress: true,
     port: 9000,
     hot: true,
-    open: true  // Option to automatically open the browser
+    open: true,  // Option to automatically open the browser
+    client: {
+      overlay: true  // Show errors in overlay
+    }
   },
   resolve: {
     extensions: ['.js', '.jsx']
