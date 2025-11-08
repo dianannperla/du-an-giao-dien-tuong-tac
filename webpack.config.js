@@ -25,7 +25,8 @@ module.exports = {
     client: {
       overlay: true,  // Show errors in overlay
       progress: true  // Show build progress in the browser
-    }
+    },
+    historyApiFallback: true // Enable support for HTML5 history API
   },
   resolve: {
     extensions: ['.js', '.jsx']
