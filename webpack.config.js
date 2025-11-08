@@ -20,7 +20,7 @@ module.exports = {
     compress: true,
     port: 9000,
     hot: true,
-    open: true  // Added option to automatically open the browser
+    open: true  // Option to automatically open the browser
   },
   resolve: {
     extensions: ['.js', '.jsx']
