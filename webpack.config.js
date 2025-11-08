@@ -9,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/, 
+        test: /.jsx?$/, 
         exclude: /node_modules/, 
         use: { loader: 'babel-loader' }
       }
@@ -22,7 +22,8 @@ module.exports = {
     hot: true,
     open: true,  // Option to automatically open the browser
     client: {
-      overlay: true  // Show errors in overlay
+      overlay: true,  // Show errors in overlay
+      progress: true  // Show build progress in the browser
     }
   },
   resolve: {
